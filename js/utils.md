@@ -1,4 +1,5 @@
 ```js
+// 颜色转换函数，将十六进制格式的颜色值转换为rgb格式
 function hexToRgb(hex) {
   var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
   return result ? {
