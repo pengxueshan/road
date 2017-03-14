@@ -2,3 +2,9 @@
 ```css
 -webkit-app-region: drag;
 ```
+
+### steps
+```css
+animation: test 1s steps(2, end);
+```
+`steps`传入两个参数，第一个参数表示把**两个关键帧之间**分割为n步，第二个参数表示在分割的时间区间内元素的状态，是按区间开始时的展示还是结束时的展示
