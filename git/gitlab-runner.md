@@ -8,7 +8,7 @@ docker run -d --name gitlab-runner --restart always \
 -v /srv/gitlab-runner/config:/etc/gitlab-runner \
 gitlab/gitlab-runner:latest
 ```
-如果本地还没有`gitlab/gitlab-runner:latest`的docker包，docker会先拉取，然后再运行你指定的包。我们也可以先手动拉取要安装的包：
+如果本地还没有`gitlab/gitlab-runner:latest` 的docker包，docker会先拉取，然后再运行你指定的包。我们也可以先手动拉取要安装的包：
 ```
 docker pull gitlab/gitlab-runner:latest
 ```
@@ -16,17 +16,17 @@ docker pull gitlab/gitlab-runner:latest
 ```
 docker images
 ```
-`-d`表示以守护进程的方式运行，`--name`为运行的docker容器命名，`--restart`出错的时候自动重启。查看运行的容器命令：
+`-d` 表示以守护进程的方式运行，`--name` 为运行的docker容器命名，`--restart` 出错的时候自动重启。查看运行的容器命令：
 ```
 docker ps -a
 ```
-`-a`表示查看所有的容器，不管是正在运行的还是停止的。
+`-a` 表示查看所有的容器，不管是正在运行的还是停止的。
 
 ### 注册runner
 ```
 docker exec -it gitlab-runner gitlab-runner register
 ```
-`-i`打开标准IO，`-t`终端交互的方式运行，`gitlab-runner`容器的名称，也可以用容器id，`gitlab-runner register`执行命令。
+`-i` 打开标准IO，`-t` 终端交互的方式运行，`gitlab-runner` 容器的名称，也可以用容器id，`gitlab-runner register` 执行命令。
 
 注册时会提示填入CI地址和token，在gitlab的CI配置界面找到CI url和token填入即可
 
