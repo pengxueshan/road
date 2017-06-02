@@ -130,14 +130,14 @@ mkdir WebApp
 
 cd WebApp
 
-git init				本地初始化
+git init 本地初始化
 
 touch README
 
-git add README		添加文件
+git add README 添加文件
 
 git commit -m 'first commit'
 
-git remote add origin git@github.com:daixu/WebApp.git	增加一个远程服务器端
+git remote add origin git@github.com:daixu/WebApp.git 增加一个远程服务器端
 
 上面的命令会增加URL地址为'git@github.com:daixu/WebApp.git'，名称为origin的远程服务器库，以后提交代码的时候只需要使用 origin别名即可
