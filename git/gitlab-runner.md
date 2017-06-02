@@ -26,7 +26,7 @@ docker ps -a
 ```
 docker exec -it gitlab-runner gitlab-runner register
 ```
-`-i` 打开标准IO，`-t` 终端交互的方式运行，`gitlab-runner` 容器的名称，也可以用容器id，`gitlab-runner register` 执行命令。
+`-i` 打开标准IO，`-t` 终端交互的方式运行，`gitlab-runner` 容器的名称，也可以用容器id，`gitlab-runner register` 执行命令。
 
 注册时会提示填入CI地址和token，在gitlab的CI配置界面找到CI url和token填入即可
 
